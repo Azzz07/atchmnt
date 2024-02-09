@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:u="sap.ui.unified" controllerName="com.ta.mediaui.controller.mediaUpload" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <FlexBox id="_IDGenFlexBox1" direction="Column" class="sapUiLargeMargin">
+                            <Label id="_IDGenLabel1" text="Attach File" labelFor="fileUploader" required="true"/>
+                            <u:FileUploader id="__fileUploader" tooltip="Upload your file to DB" change="onFileChange"/>
+                            <Button id="_IDGenButton1" text="Upload" press="onUploadFile" type="Emphasized"/>
+                            	<Image id="_IDGenImage1" ariaDetails="detailsActiveImage" src="media_srv/v2/media/MediaFile(1)/content"
+					decorative="false"/>
+                        </FlexBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
